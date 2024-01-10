@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1704889434605,
+  "timestamp": 1704891871661,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main.a46958a2f7092b80.js",
+        "/main.8ad9df78317d4a96.js",
         "/manifest.webmanifest",
         "/polyfills.cd25fd2ac0c9a5d0.js",
         "/runtime.66741b3d801f13e2.js",
@@ -4336,8 +4336,8 @@
     "/assets/plugins/uplot/uPlot.iife.min.js": "7a3629b55b36cb872aa39a28334d2ff42e4d0062",
     "/assets/plugins/uplot/uPlot.min.css": "534fd0aff8141c18e7cae32fe902495ff49fe8c5",
     "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/index.html": "770a2ae9d0422e8236a288ce7da010c2b719f1e1",
-    "/main.a46958a2f7092b80.js": "d749e96c5bd399528f996a85f791cf9de7c8e3c1",
+    "/index.html": "4d4ead92156565dd5a6e6972f30f3ac2cd0ef04a",
+    "/main.8ad9df78317d4a96.js": "2a6280077b326b6f8ba0af16a2c042be84ab12db",
     "/manifest.webmanifest": "3496c4867b00cf704a91f0ac881d690812ea0f17",
     "/polyfills.cd25fd2ac0c9a5d0.js": "2ee977b0b71fdcf61d0ffa73d17e02a7a9044271",
     "/runtime.66741b3d801f13e2.js": "7c6e1d3ba7706d8c395c5f67965a0941a5cebf37",

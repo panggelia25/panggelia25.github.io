@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemilihan Laptop</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 700px;
+            margin: 40px auto;
+        }
+
+        h1 {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            flex: 1;
+            font-weight: 500;
+            color: #555;
+            margin-right: 15px;
+            text-align: left; /* Sekarang teks label rata kiri */
+        }
+
+        
+
+        .form-group .form-control {
+            flex: 2;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .btn-primary {
+            background-color: #0b186d;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .btn-primary:hover {
+            background-color: #2980b9;
+        }
+
+        #hasil {
+            background-color: #ecf0f1;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .form-group {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .form-group label {
+                text-align: left;
+                margin-bottom: 5px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .btn-primary {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4">Masukkan Kriteria Laptop</h1>
+        <form id="laptopForm">
+            <div class="form-group">
+                <label for="harga">Harga (Juta):</label>
+                <input type="number" class="form-control" id="harga" name="harga" required>
+            </div>
+            <div class="form-group">
+                <label for="prosesor">Prosessor (GHz):</label>
+                <input type="number" class="form-control" id="prosesor" name="prosesor" step="0.1" required>
+            </div>
+            <div class="form-group">
+                <label for="ram">RAM (GB):</label>
+                <input type="number" class="form-control" id="ram" name="ram" required>
+            </div>
+            <div class="form-group">
+                <label for="penyimpanan">Penyimpanan (GB):</label>
+                <input type="number" class="form-control" id="penyimpanan" name="penyimpanan" required>
+            </div>
+            <div class="form-group">
+                <label for="baterai">Daya Tahan Baterai (Jam):</label>
+                <input type="number" class="form-control" id="baterai" name="baterai" required>
+            </div>
+            <div class="form-group">
+                <label for="berat">Berat (Kg):</label>
+                <input type="number" class="form-control" id="berat" name="berat" step="0.1" required>
+            </div>
+            <button type="button" class="btn btn-primary btn-block" onclick="prosesFuzzy()">Dapatkan Rekomendasi</button>
+        </form>
+        <div id="hasil" class="mt-4"></div>
+    </div>
+    <script src="laptops.js"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
